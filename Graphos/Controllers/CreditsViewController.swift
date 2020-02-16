@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  CreditsViewController.swift
 //  Graphos
 //
 //  Created by Leandro Sousa on 08/02/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class SettingsViewController: UIViewController {
+class CreditsViewController: UIViewController {
 
-	public override func viewDidLoad() {
+	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
 }

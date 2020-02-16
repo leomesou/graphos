@@ -9,7 +9,7 @@
 import UIKit
 
 public class FirstViewController: UIViewController {
-	
+
 	@IBOutlet weak var logoImageView: UIImageView!
 	@IBOutlet weak var playView: UIView! {
 		didSet {
@@ -35,24 +35,38 @@ public class FirstViewController: UIViewController {
 			creditsView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(creditsAction)))
 		}
 	}
-	
+
 	public override func viewDidLoad() {
 		super.viewDidLoad()
+		setStrings()
 	}
-	
+
+	public override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		animateViews()
+	}
+
 	@objc private func playAction() {
-		print("Play")
+		navigationController?.pushViewController(ViewManager.playViewController(), animated: true)
 	}
-	
+
 	@objc private func gameCenterAction() {
 		print("Game Center")
 	}
-	
+
 	@objc private func settingsAction() {
-		print("Settings")
+		navigationController?.pushViewController(ViewManager.settingsViewController(), animated: true)
 	}
-	
+
 	@objc private func creditsAction() {
-		print("Credits")
+		navigationController?.pushViewController(ViewManager.creditsViewController(), animated: true)
+	}
+
+	private func setStrings() {
+
+	}
+
+	private func animateViews() {
+
 	}
 }

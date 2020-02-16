@@ -9,7 +9,7 @@
 import UIKit
 
 public class LevelsViewController: UIViewController {
-	
+
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 	}

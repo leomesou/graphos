@@ -9,7 +9,7 @@
 import UIKit
 
 public class PlayViewController: UIViewController {
-	
+
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 	}
