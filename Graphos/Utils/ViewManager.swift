@@ -40,6 +40,11 @@ public class ViewManager {
 		return storyboard.instantiateViewController(withIdentifier: "CreditsViewController")
 	}
 
+	class func helpViewController() -> UIViewController {
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		return storyboard.instantiateViewController(withIdentifier: "HelpViewController")
+	}
+
 	class func quizViewController() -> UIViewController {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		return storyboard.instantiateViewController(withIdentifier: "QuizViewController")

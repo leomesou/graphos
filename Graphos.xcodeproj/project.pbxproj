@@ -18,6 +18,7 @@
 		9CE3584723B4FD2500EFBC47 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584223B4FD2400EFBC47 /* Rajdhani-Regular.ttf */; };
 		9CE3584A23B5090F00EFBC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584823B5090F00EFBC47 /* LaunchScreen.storyboard */; };
 		9CE3584B23B5090F00EFBC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584923B5090F00EFBC47 /* Main.storyboard */; };
+		9CE7971B23F9676F00C064C6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7971A23F9676F00C064C6 /* HelpViewController.swift */; };
 		9CE8AB1323EED2C500A3A909 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1223EED2C400A3A909 /* FirstViewController.swift */; };
 		9CE8AB1523EED31F00A3A909 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */; };
 		9CE8AB1723EED39500A3A909 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1623EED39500A3A909 /* SettingsViewController.swift */; };
@@ -43,6 +44,7 @@
 		9CE3584223B4FD2400EFBC47 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
 		9CE3584823B5090F00EFBC47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CE3584923B5090F00EFBC47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9CE7971A23F9676F00C064C6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1223EED2C400A3A909 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1623EED39500A3A909 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				9C1A2B9F23EF0015007137BE /* CreditsViewController.swift */,
 				9CE8AB1223EED2C400A3A909 /* FirstViewController.swift */,
 				9CE8AB1C23EED40B00A3A909 /* GameViewController.swift */,
+				9CE7971A23F9676F00C064C6 /* HelpViewController.swift */,
 				9CE8AB1823EED3CA00A3A909 /* LevelsViewController.swift */,
 				9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */,
 				9CE8AB1A23EED3F000A3A909 /* QuizViewController.swift */,
@@ -228,6 +231,7 @@
 				9CE8AB1D23EED40B00A3A909 /* GameViewController.swift in Sources */,
 				9CE8AB2123EED5BA00A3A909 /* Colors.swift in Sources */,
 				9CE8AB2723EED98900A3A909 /* UIView+Extensions.swift in Sources */,
+				9CE7971B23F9676F00C064C6 /* HelpViewController.swift in Sources */,
 				9CE8AB1323EED2C500A3A909 /* FirstViewController.swift in Sources */,
 				9CE8AB1923EED3CA00A3A909 /* LevelsViewController.swift in Sources */,
 				9CE8AB1523EED31F00A3A909 /* PlayViewController.swift in Sources */,

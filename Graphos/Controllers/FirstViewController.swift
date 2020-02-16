@@ -17,10 +17,20 @@ public class FirstViewController: UIViewController {
 			playView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(playAction)))
 		}
 	}
+	@IBOutlet weak var playLabel: UILabel! {
+		didSet {
+			playLabel.textColor = .white
+		}
+	}
 	@IBOutlet weak var gameCenterView: UIView! {
 		didSet {
 			gameCenterView.backgroundColor = Colors.challengerange
 			gameCenterView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(gameCenterAction)))
+		}
+	}
+	@IBOutlet weak var gameCenterLabel: UILabel! {
+		didSet {
+			gameCenterLabel.textColor = .white
 		}
 	}
 	@IBOutlet weak var settingsView: UIView! {
@@ -29,16 +39,26 @@ public class FirstViewController: UIViewController {
 			settingsView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(settingsAction)))
 		}
 	}
+	@IBOutlet weak var settingsLabel: UILabel! {
+		didSet {
+			settingsLabel.textColor = .white
+		}
+	}
 	@IBOutlet weak var creditsView: UIView! {
 		didSet {
 			creditsView.backgroundColor = Colors.iPink
 			creditsView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(creditsAction)))
 		}
 	}
+	@IBOutlet weak var creditsLabel: UILabel! {
+		didSet {
+			creditsLabel.textColor = .white
+		}
+	}
 
 	public override func viewDidLoad() {
 		super.viewDidLoad()
-		setStrings()
+		setStringsAndImages()
 	}
 
 	public override func viewWillAppear(_ animated: Bool) {
@@ -62,8 +82,12 @@ public class FirstViewController: UIViewController {
 		navigationController?.pushViewController(ViewManager.creditsViewController(), animated: true)
 	}
 
-	private func setStrings() {
-
+	private func setStringsAndImages() {
+		logoImageView.image = UIImage(named: "graphos_logo_color")
+		playLabel.text = "Jogar"
+		gameCenterLabel.text = "Game Center"
+		settingsLabel.text = "Configs."
+		creditsLabel.text = "Créditos"
 	}
 
 	private func animateViews() {
