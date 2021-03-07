@@ -37,7 +37,7 @@ class CreditsViewController: UIViewController {
 	}
 	@IBOutlet weak var backButton: UIButton! {
 		didSet {
-			backButton.tintColor = Colors.smartPurple
+			backButton.tintColor = Colors.iPink
 		}
 	}
 
@@ -52,7 +52,7 @@ class CreditsViewController: UIViewController {
 	}
 
 	@IBAction func backAction(_ sender: Any) {
-		navigationController?.popToRootViewController(animated: true)
+		navigationController?.popViewController(animated: true)
 	}
 
 	private func setStrings() {

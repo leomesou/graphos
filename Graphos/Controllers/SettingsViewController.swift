@@ -73,11 +73,11 @@ public class SettingsViewController: UIViewController {
 	}
 
 	@objc private func helpAction() {
-		print("Help")
+		navigationController?.pushViewController(ViewManager.helpViewController(), animated: true)
 	}
 
 	@IBAction func backAction(_ sender: Any) {
-		navigationController?.popToRootViewController(animated: true)
+		navigationController?.popViewController(animated: true)
 	}
 
 	private func setStrings() {

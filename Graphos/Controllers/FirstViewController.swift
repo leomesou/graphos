@@ -66,6 +66,10 @@ public class FirstViewController: UIViewController {
 		animateViews()
 	}
 
+	public override var prefersStatusBarHidden : Bool {
+		return true
+	}
+
 	@objc private func playAction() {
 		navigationController?.pushViewController(ViewManager.playViewController(), animated: true)
 	}

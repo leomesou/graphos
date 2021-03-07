@@ -81,7 +81,7 @@ public class PlayViewController: UIViewController {
 	}
 
 	@IBAction func backAction(_ sender: Any) {
-		navigationController?.popToRootViewController(animated: true)
+		navigationController?.popViewController(animated: true)
 	}
 
 	private func setStrings() {
