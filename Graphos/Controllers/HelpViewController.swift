@@ -25,14 +25,14 @@ class HelpViewController: UIViewController {
 			planarGraphLabel.textColor = .white
 		}
 	}
-	@IBOutlet weak var graphByDegreeView: UIView! {
+	@IBOutlet weak var kRegularGraphView: UIView! {
 		didSet {
-			graphByDegreeView.backgroundColor = Colors.challengerange
+			kRegularGraphView.backgroundColor = Colors.challengerange
 		}
 	}
-	@IBOutlet weak var graphByDegreeLabel: UILabel! {
+	@IBOutlet weak var kRegularGraphLabel: UILabel! {
 		didSet {
-			graphByDegreeLabel.textColor = .white
+			kRegularGraphLabel.textColor = .white
 		}
 	}
 	@IBOutlet weak var quizView: UIView! {
@@ -66,10 +66,10 @@ class HelpViewController: UIViewController {
 	}
 
 	private func setStrings() {
-		titleLabel.text = "Ajuda"
-		planarGraphLabel.text = "Grafo planar é sobre ..."
-		graphByDegreeLabel.text = "Grafo por Grau é sobre ..."
-		quizLabel.text = "Quiz é sobre ..."
+		titleLabel.text = Texts.Help.title
+		planarGraphLabel.text = Texts.Help.planarGraph
+		kRegularGraphLabel.text = Texts.Help.kRegularGraph
+		quizLabel.text = Texts.Help.quiz
 	}
 
 	private func animateViews() {

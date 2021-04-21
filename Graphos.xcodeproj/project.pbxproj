@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0B5B5226304DD100E2BF15 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B5B5126304DD100E2BF15 /* Texts.swift */; };
+		9C0B5B562630505C00E2BF15 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B5B552630505B00E2BF15 /* Images.swift */; };
 		9C1A2B9E23EEFB55007137BE /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A2B9D23EEFB55007137BE /* ViewManager.swift */; };
 		9C1A2BA023EF0015007137BE /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A2B9F23EF0015007137BE /* CreditsViewController.swift */; };
 		9CE3582A23B149BC00EFBC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3582923B149BC00EFBC47 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C0B5B5126304DD100E2BF15 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		9C0B5B552630505B00E2BF15 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		9C1A2B9D23EEFB55007137BE /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		9C1A2B9F23EF0015007137BE /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		9CE3582623B149BC00EFBC47 /* Graphos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				9CE8AB2023EED5BA00A3A909 /* Colors.swift */,
+				9C0B5B5126304DD100E2BF15 /* Texts.swift */,
+				9C0B5B552630505B00E2BF15 /* Images.swift */,
 				9C1A2B9D23EEFB55007137BE /* ViewManager.swift */,
 			);
 			path = Utils;
@@ -235,7 +241,9 @@
 				9CE8AB1323EED2C500A3A909 /* FirstViewController.swift in Sources */,
 				9CE8AB1923EED3CA00A3A909 /* LevelsViewController.swift in Sources */,
 				9CE8AB1523EED31F00A3A909 /* PlayViewController.swift in Sources */,
+				9C0B5B562630505C00E2BF15 /* Images.swift in Sources */,
 				9CE8AB1B23EED3F000A3A909 /* QuizViewController.swift in Sources */,
+				9C0B5B5226304DD100E2BF15 /* Texts.swift in Sources */,
 				9C1A2BA023EF0015007137BE /* CreditsViewController.swift in Sources */,
 				9C1A2B9E23EEFB55007137BE /* ViewManager.swift in Sources */,
 				9CE3582A23B149BC00EFBC47 /* AppDelegate.swift in Sources */,

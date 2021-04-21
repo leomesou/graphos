@@ -26,15 +26,15 @@ public class PlayViewController: UIViewController {
 			planarGraphLabel.textColor = .white
 		}
 	}
-	@IBOutlet weak var graphByDegreeView: UIView! {
+	@IBOutlet weak var kRegularGraphView: UIView! {
 		didSet {
-			graphByDegreeView.backgroundColor = Colors.techGreen
-			graphByDegreeView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(graphByDegreeAction)))
+			kRegularGraphView.backgroundColor = Colors.techGreen
+			kRegularGraphView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(kRegularGraphAction)))
 		}
 	}
-	@IBOutlet weak var graphByDegreeLabel: UILabel! {
+	@IBOutlet weak var kRegularGraphLabel: UILabel! {
 		didSet {
-			graphByDegreeLabel.textColor = .white
+			kRegularGraphLabel.textColor = .white
 		}
 	}
 	@IBOutlet weak var quizView: UIView! {
@@ -70,7 +70,7 @@ public class PlayViewController: UIViewController {
 		}
 	}
 
-	@objc private func graphByDegreeAction() {
+	@objc private func kRegularGraphAction() {
 		if let levelsVC = ViewManager.levelsViewController() as? LevelsViewController {
 			navigationController?.pushViewController(levelsVC, animated: true)
 		}
@@ -85,10 +85,10 @@ public class PlayViewController: UIViewController {
 	}
 
 	private func setStrings() {
-		titleLabel.text = "Jogar"
-		planarGraphLabel.text = "Grafo planar"
-		graphByDegreeLabel.text = "Grafo por Grau"
-		quizLabel.text = "Quiz"
+		titleLabel.text = Texts.Play.title
+		planarGraphLabel.text = Texts.Play.planarGraph
+		kRegularGraphLabel.text = Texts.Play.kRegularGraph
+		quizLabel.text = Texts.Play.quiz
 	}
 
 	private func animateViews() {

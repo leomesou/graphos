@@ -87,11 +87,11 @@ public class FirstViewController: UIViewController {
 	}
 
 	private func setStringsAndImages() {
-		logoImageView.image = UIImage(named: "graphos_logo_color")
-		playLabel.text = "Jogar"
-		gameCenterLabel.text = "Game Center"
-		settingsLabel.text = "Configs."
-		creditsLabel.text = "Créditos"
+		logoImageView.image = Images.graphosLogoColor
+		playLabel.text = Texts.First.play
+		gameCenterLabel.text = Texts.First.gameCenter
+		settingsLabel.text = Texts.First.settings
+		creditsLabel.text = Texts.First.credits
 	}
 
 	private func animateViews() {

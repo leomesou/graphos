@@ -50,6 +50,6 @@ public class LevelsViewController: UIViewController {
 	}
 
 	private func setStrings() {
-		titleLabel.text = "Níveis"
+		titleLabel.text = Texts.Levels.title
 	}
 }

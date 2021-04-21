@@ -50,6 +50,6 @@ public class QuizViewController: UIViewController {
 	}
 
 	private func setStrings() {
-		titleLabel.text = "Quiz"
+		titleLabel.text = Texts.Quiz.title
 	}
 }

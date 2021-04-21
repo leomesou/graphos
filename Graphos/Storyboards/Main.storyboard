@@ -214,8 +214,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntj-so-rj6">
                                         <rect key="frame" x="56.5" y="108" width="318.5" height="104"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grafo por Grau" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJT-P3-DwG">
-                                                <rect key="frame" x="16" y="33" width="177.5" height="38.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grafo k-regular" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJT-P3-DwG">
+                                                <rect key="frame" x="16" y="33" width="183" height="38.5"/>
                                                 <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -284,8 +284,8 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="Evm-fQ-HGc" id="Cqn-kV-FgK"/>
-                        <outlet property="graphByDegreeLabel" destination="bJT-P3-DwG" id="Z3c-9P-okD"/>
-                        <outlet property="graphByDegreeView" destination="Ntj-so-rj6" id="EaK-J3-JXN"/>
+                        <outlet property="kRegularGraphLabel" destination="bJT-P3-DwG" id="Z3c-9P-okD"/>
+                        <outlet property="kRegularGraphView" destination="Ntj-so-rj6" id="EaK-J3-JXN"/>
                         <outlet property="planarGraphLabel" destination="WdK-cU-0Ob" id="b0x-dn-j1H"/>
                         <outlet property="planarGraphView" destination="E0u-2c-0qe" id="dRT-BG-hWI"/>
                         <outlet property="quizLabel" destination="tOO-uX-DmG" id="o7M-Ws-clg"/>
@@ -883,8 +883,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-BW-6JO">
                                         <rect key="frame" x="56.5" y="108" width="318.5" height="104"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grafo por Grau..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBH-01-uO6">
-                                                <rect key="frame" x="16" y="33" width="195" height="38.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grafo k-regular..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBH-01-uO6">
+                                                <rect key="frame" x="16" y="33" width="200.5" height="38.5"/>
                                                 <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -953,8 +953,8 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="7SM-k3-Rck" id="7QP-xY-PUa"/>
-                        <outlet property="graphByDegreeLabel" destination="NBH-01-uO6" id="CPd-yx-poW"/>
-                        <outlet property="graphByDegreeView" destination="pLy-BW-6JO" id="Lvg-o9-gpu"/>
+                        <outlet property="kRegularGraphLabel" destination="NBH-01-uO6" id="CPd-yx-poW"/>
+                        <outlet property="kRegularGraphView" destination="pLy-BW-6JO" id="Lvg-o9-gpu"/>
                         <outlet property="planarGraphLabel" destination="jRY-bO-cc7" id="UKL-ax-ptb"/>
                         <outlet property="planarGraphView" destination="r4T-b6-Gvk" id="Jp8-hW-CpG"/>
                         <outlet property="quizLabel" destination="CzS-68-p23" id="v1F-XE-Kfh"/>

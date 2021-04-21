@@ -56,9 +56,9 @@ class CreditsViewController: UIViewController {
 	}
 
 	private func setStrings() {
-		titleLabel.text = "Créditos"
-		developedByLabel.text = "Desenvolvido por Leandro Sousa"
-		aboutLabel.text = "Jogo criado para auxiliar no ensino de grafos"
+		titleLabel.text = Texts.Credits.title
+		developedByLabel.text = Texts.Credits.developedBy
+		aboutLabel.text = Texts.Credits.about
 	}
 
 	private func animateViews() {

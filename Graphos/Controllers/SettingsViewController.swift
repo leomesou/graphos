@@ -81,10 +81,10 @@ public class SettingsViewController: UIViewController {
 	}
 
 	private func setStrings() {
-		titleLabel.text = "Configs."
-		resetProgressLabel.text = "Resetar Progresso"
-		activateSoundLabel.text = "Ativar Sons"
-		helpLabel.text = "Ajuda"
+		titleLabel.text = Texts.Settings.title
+		resetProgressLabel.text = Texts.Settings.resetProgress
+		activateSoundLabel.text = Texts.Settings.activateSound
+		helpLabel.text = Texts.Settings.help
 	}
 
 	private func animateViews() {

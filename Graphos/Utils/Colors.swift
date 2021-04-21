@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Colors {
+public struct Colors {
 
 	public static let techGreen = UIColor(hex: 0x03C188)
 	public static let techGreenOrigin = UIColor(hex: 0x03BBC1)
