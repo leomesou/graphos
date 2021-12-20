@@ -16,4 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		return true
 	}
+
+	func applicationDidBecomeActive(_ application: UIApplication) {
+		PersistenceManager.instance.preparePlistForUse(.gameData)
+		PersistenceManager.instance.preparePlistForUse(.gameDefinitions)
+	}
 }

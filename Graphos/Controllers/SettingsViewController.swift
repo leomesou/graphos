@@ -66,6 +66,8 @@ public class SettingsViewController: UIViewController {
 
 	@objc private func resetProgressAction() {
 		print("Reset Progress")
+		//TODO: Confirm
+		PersistenceManager.instance.resetProgress()
 	}
 
 	@objc private func activateSoundAction() {

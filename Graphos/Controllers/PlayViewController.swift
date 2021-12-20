@@ -66,12 +66,14 @@ public class PlayViewController: UIViewController {
 
 	@objc private func planarGraphAction() {
 		if let levelsVC = ViewManager.levelsViewController() as? LevelsViewController {
+			levelsVC.gameType = .planar
 			navigationController?.pushViewController(levelsVC, animated: true)
 		}
 	}
 
 	@objc private func kRegularGraphAction() {
 		if let levelsVC = ViewManager.levelsViewController() as? LevelsViewController {
+			levelsVC.gameType = .kRegular
 			navigationController?.pushViewController(levelsVC, animated: true)
 		}
 	}

@@ -30,6 +30,10 @@
 		9CE8AB2123EED5BA00A3A909 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB2023EED5BA00A3A909 /* Colors.swift */; };
 		9CE8AB2523EED6EA00A3A909 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB2423EED6EA00A3A909 /* UIColor+Extensions.swift */; };
 		9CE8AB2723EED98900A3A909 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB2623EED98900A3A909 /* UIView+Extensions.swift */; };
+		9CF663652666F5B100530090 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF663642666F5B100530090 /* GameData.plist */; };
+		9CF663672666F5C000530090 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF663662666F5C000530090 /* PersistenceManager.swift */; };
+		9CF663692666F6DC00530090 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF663682666F6DC00530090 /* Global.swift */; };
+		9CF6636B2666F8AF00530090 /* GameDefinitions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF6636A2666F8AF00530090 /* GameDefinitions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		9CE8AB2023EED5BA00A3A909 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9CE8AB2423EED6EA00A3A909 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9CE8AB2623EED98900A3A909 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		9CF663642666F5B100530090 /* GameData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+		9CF663662666F5C000530090 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		9CF663682666F6DC00530090 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		9CF6636A2666F8AF00530090 /* GameDefinitions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameDefinitions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 				9CE8AB1E23EED44100A3A909 /* Controllers */,
 				9CE8AB2323EED6C900A3A909 /* Extensions */,
 				9CE3583D23B4FD0600EFBC47 /* Fonts */,
+				9CF663632666F58400530090 /* Persistence */,
 				9CE8AB1F23EED46C00A3A909 /* Storyboards */,
 				9CE8AB2223EED5C400A3A909 /* Utils */,
 			);
@@ -142,8 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				9CE8AB2023EED5BA00A3A909 /* Colors.swift */,
-				9C0B5B5126304DD100E2BF15 /* Texts.swift */,
+				9CF663682666F6DC00530090 /* Global.swift */,
 				9C0B5B552630505B00E2BF15 /* Images.swift */,
+				9C0B5B5126304DD100E2BF15 /* Texts.swift */,
 				9C1A2B9D23EEFB55007137BE /* ViewManager.swift */,
 			);
 			path = Utils;
@@ -156,6 +166,16 @@
 				9CE8AB2623EED98900A3A909 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CF663632666F58400530090 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9CF663642666F5B100530090 /* GameData.plist */,
+				9CF6636A2666F8AF00530090 /* GameDefinitions.plist */,
+				9CF663662666F5C000530090 /* PersistenceManager.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +239,11 @@
 				9CE3584723B4FD2500EFBC47 /* Rajdhani-Regular.ttf in Resources */,
 				9CE3583323B149BE00EFBC47 /* Assets.xcassets in Resources */,
 				9CE3584523B4FD2500EFBC47 /* Rajdhani-Light.ttf in Resources */,
+				9CF663652666F5B100530090 /* GameData.plist in Resources */,
 				9CE3584B23B5090F00EFBC47 /* Main.storyboard in Resources */,
 				9CE3584323B4FD2500EFBC47 /* Rajdhani-Medium.ttf in Resources */,
 				9CE3584A23B5090F00EFBC47 /* LaunchScreen.storyboard in Resources */,
+				9CF6636B2666F8AF00530090 /* GameDefinitions.plist in Resources */,
 				9CE3584623B4FD2500EFBC47 /* Rajdhani-Bold.ttf in Resources */,
 				9CE3584423B4FD2500EFBC47 /* Rajdhani-SemiBold.ttf in Resources */,
 			);
@@ -237,6 +259,7 @@
 				9CE8AB1D23EED40B00A3A909 /* GameViewController.swift in Sources */,
 				9CE8AB2123EED5BA00A3A909 /* Colors.swift in Sources */,
 				9CE8AB2723EED98900A3A909 /* UIView+Extensions.swift in Sources */,
+				9CF663672666F5C000530090 /* PersistenceManager.swift in Sources */,
 				9CE7971B23F9676F00C064C6 /* HelpViewController.swift in Sources */,
 				9CE8AB1323EED2C500A3A909 /* FirstViewController.swift in Sources */,
 				9CE8AB1923EED3CA00A3A909 /* LevelsViewController.swift in Sources */,
@@ -249,6 +272,7 @@
 				9CE3582A23B149BC00EFBC47 /* AppDelegate.swift in Sources */,
 				9CE8AB2523EED6EA00A3A909 /* UIColor+Extensions.swift in Sources */,
 				9CE8AB1723EED39500A3A909 /* SettingsViewController.swift in Sources */,
+				9CF663692666F6DC00530090 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

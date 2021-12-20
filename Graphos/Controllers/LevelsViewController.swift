@@ -36,6 +36,8 @@ public class LevelsViewController: UIViewController {
 		}
 	}
 
+	public var gameType: GameType = .planar
+
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 		setStrings()
