@@ -61,21 +61,15 @@ public class PlayViewController: UIViewController {
 
 	public override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		animateViews()
+		view.animateViews(views: [planarGraphView, kRegularGraphView, quizView])
 	}
 
 	@objc private func planarGraphAction() {
-		if let levelsVC = ViewManager.levelsViewController() as? LevelsViewController {
-			levelsVC.gameType = .planar
-			navigationController?.pushViewController(levelsVC, animated: true)
-		}
+		navigateToLevelsViewController(gameType: .planar)
 	}
 
 	@objc private func kRegularGraphAction() {
-		if let levelsVC = ViewManager.levelsViewController() as? LevelsViewController {
-			levelsVC.gameType = .kRegular
-			navigationController?.pushViewController(levelsVC, animated: true)
-		}
+		navigateToLevelsViewController(gameType: .kRegular)
 	}
 
 	@objc private func quizAction() {
@@ -93,7 +87,10 @@ public class PlayViewController: UIViewController {
 		quizLabel.text = Texts.Play.quiz
 	}
 
-	private func animateViews() {
-
+	private func navigateToLevelsViewController(gameType: GameType) {
+		if let levelsVC = ViewManager.levelsViewController() as? LevelsViewController {
+			levelsVC.gameType = gameType
+			navigationController?.pushViewController(levelsVC, animated: true)
+		}
 	}
 }

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Uma árvore geradora mínima (MST) é um subgrafo do grafo original que conecta todos os vértices com o menor peso total das arestas, sem formar ciclos.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>O grafo contém todos os vértices de um grafo original e o menor número possível de arestas.</string>
+			<key>b</key>
+			<string>O grafo contém todos os vértices de um grafo original e o menor peso total das arestas.</string>
+			<key>c</key>
+			<string>O grafo contém todos os vértices e todas as arestas do grafo original.</string>
+			<key>d</key>
+			<string>O grafo não possui ciclos.</string>
+		</dict>
+		<key>question</key>
+		<string>O que caracteriza um grafo de árvore geradora mínima (MST)?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo planar pode ser desenhado no plano sem que suas arestas se cruzem.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo que pode ser desenhado no plano sem cruzamentos.</string>
+			<key>b</key>
+			<string>Um grafo que tem ciclos de comprimento 3.</string>
+			<key>c</key>
+			<string>Um grafo que possui apenas arestas horizontais.</string>
+			<key>d</key>
+			<string>Um grafo com todos os vértices conectados.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo planar?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo k-regular é aquele em que todos os vértices possuem o mesmo grau k.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Cada vértice tem grau k.</string>
+			<key>b</key>
+			<string>O grafo possui k arestas.</string>
+			<key>c</key>
+			<string>Todos os vértices estão conectados por k caminhos.</string>
+			<key>d</key>
+			<string>O grafo tem k ciclos.</string>
+		</dict>
+		<key>question</key>
+		<string>O que significa um grafo ser k-regular?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Em um grafo bipartido, os vértices podem ser divididos em dois conjuntos disjuntos onde as arestas conectam apenas vértices de conjuntos diferentes.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Não possui ciclos.</string>
+			<key>b</key>
+			<string>Seus vértices podem ser divididos em dois conjuntos disjuntos, sem arestas entre vértices do mesmo conjunto.</string>
+			<key>c</key>
+			<string>Todos os vértices estão conectados a pelo menos dois outros.</string>
+			<key>d</key>
+			<string>Ele contém exatamente dois vértices.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a característica de um grafo bipartido?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Um ciclo é um caminho fechado, ou seja, um caminho que começa e termina no mesmo vértice, podendo repetir vértices ao longo do caminho.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um caminho fechado em que nenhum vértice é repetido.</string>
+			<key>b</key>
+			<string>Um caminho que começa e termina no mesmo vértice, podendo repetir vértices.</string>
+			<key>c</key>
+			<string>Uma aresta que conecta dois vértices de grau 2.</string>
+			<key>d</key>
+			<string>Um conjunto de vértices isolados.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um ciclo em um grafo?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Em um grafo completo, todos os pares de vértices estão conectados por arestas.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo onde todos os vértices estão conectados a pelo menos um outro vértice.</string>
+			<key>b</key>
+			<string>Um grafo onde cada par de vértices distintos está conectado por uma aresta.</string>
+			<key>c</key>
+			<string>Um grafo que não possui ciclos.</string>
+			<key>d</key>
+			<string>Um grafo com mais de um componente conexo.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo completo?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo acíclico não possui ciclos, ou seja, não há caminho fechado onde o vértice inicial seja o mesmo que o final.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo sem nenhum caminho fechado.</string>
+			<key>b</key>
+			<string>Um grafo que contém exatamente um ciclo.</string>
+			<key>c</key>
+			<string>Um grafo em que todos os vértices têm o mesmo grau.</string>
+			<key>d</key>
+			<string>Um grafo que possui uma aresta de peso zero.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a definição de um grafo acíclico?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>O grau de um vértice é o número de arestas que estão incidentes (ligadas) a ele.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>O número de arestas incidentes em um vértice.</string>
+			<key>b</key>
+			<string>O número de caminhos que partem de um vértice.</string>
+			<key>c</key>
+			<string>O número de vértices conectados a um vértice.</string>
+			<key>d</key>
+			<string>O número total de vértices no grafo.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é o grau de um vértice em um grafo?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Em um grafo direcionado, as arestas possuem uma direção associada, ou seja, elas vão de um vértice a outro.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo onde as arestas não têm direção.</string>
+			<key>b</key>
+			<string>Um grafo onde as arestas têm uma direção associada a elas.</string>
+			<key>c</key>
+			<string>Um grafo onde todos os vértices são conectados a um único vértice.</string>
+			<key>d</key>
+			<string>Um grafo que não possui arestas.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a definição de um grafo direcionado?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>c</string>
+		<key>explanation</key>
+		<string>Uma árvore é um grafo acíclico e conexo, ou seja, não possui ciclos e existe um caminho entre qualquer par de vértices.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo que possui pelo menos um ciclo.</string>
+			<key>b</key>
+			<string>Um grafo com um único vértice e várias arestas.</string>
+			<key>c</key>
+			<string>Um grafo acíclico e conexo.</string>
+			<key>d</key>
+			<string>Um grafo onde todos os vértices têm o mesmo grau.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é uma árvore em teoria dos grafos?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>O número de arestas em um grafo completo de n vértices é dado por n(n-1)/2, pois é o número de combinações de dois vértices.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>n-1.</string>
+			<key>b</key>
+			<string>n(n-1)/2.</string>
+			<key>c</key>
+			<string>n(n+1)/2.</string>
+			<key>d</key>
+			<string>2n.</string>
+		</dict>
+		<key>question</key>
+		<string>Como se define o número de arestas em um grafo completo de n vértices?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo conexo é aquele em que existe um caminho entre qualquer par de vértices.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo onde todos os vértices estão conectados.</string>
+			<key>b</key>
+			<string>Um grafo onde todos os vértices têm o mesmo grau.</string>
+			<key>c</key>
+			<string>Um grafo onde existe pelo menos um caminho entre dois vértices.</string>
+			<key>d</key>
+			<string>Um grafo com um único ciclo.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a definição de um grafo conexo?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Em um grafo bipartido completo, o número de arestas é o produto do número de vértices dos dois conjuntos, m * n.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>m + n.</string>
+			<key>b</key>
+			<string>m * n.</string>
+			<key>c</key>
+			<string>(m + n)/2.</string>
+			<key>d</key>
+			<string>m^2 + n^2.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a fórmula para o número de arestas de um grafo bipartido completo de dois conjuntos A e B com m e n vértices, respectivamente?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um multigrafo permite que existam múltiplas arestas entre os mesmos pares de vértices.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo que pode ter múltiplas arestas entre os mesmos vértices.</string>
+			<key>b</key>
+			<string>Um grafo que não possui arestas.</string>
+			<key>c</key>
+			<string>Um grafo que não contém ciclos.</string>
+			<key>d</key>
+			<string>Um grafo onde todos os vértices são conectados por arestas.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo multigrafo?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Em um grafo completo direcionado, cada vértice está conectado a todos os outros com arestas direcionadas.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Cada vértice está conectado a todos os outros com arestas direcionadas.</string>
+			<key>b</key>
+			<string>Cada vértice está conectado a pelo menos um outro vértice.</string>
+			<key>c</key>
+			<string>Não possui arestas.</string>
+			<key>d</key>
+			<string>É um grafo que não permite ciclos.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a propriedade de um grafo completo direcionado?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>b</string>
+		<key>explanation</key>
+		<string>Um grafo planar de gênero 1 pode ser desenhado em uma superfície com um buraco, como uma dona.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo que pode ser desenhado no plano sem cruzamentos.</string>
+			<key>b</key>
+			<string>Um grafo que pode ser desenhado em uma superfície com um único buraco.</string>
+			<key>c</key>
+			<string>Um grafo que não possui arestas.</string>
+			<key>d</key>
+			<string>Um grafo onde cada vértice tem grau 1.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo planar com gênero 1?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Uma árvore geradora mínima é uma árvore que conecta todos os vértices de um grafo, com o menor peso possível nas arestas.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Uma árvore que conecta todos os vértices de um grafo, com o menor peso possível nas arestas.</string>
+			<key>b</key>
+			<string>Uma árvore com o maior número possível de arestas.</string>
+			<key>c</key>
+			<string>Uma árvore que conecta todos os vértices sem formar ciclos.</string>
+			<key>d</key>
+			<string>Uma árvore que possui apenas vértices de grau 2.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é uma árvore geradora mínima?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Em um grafo bipartido completo, todos os vértices de um conjunto estão conectados a todos os vértices do outro.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo bipartido onde todos os vértices de um conjunto estão conectados a todos os vértices do outro.</string>
+			<key>b</key>
+			<string>Um grafo que possui ciclos de comprimento 2.</string>
+			<key>c</key>
+			<string>Um grafo onde todos os vértices têm grau 3.</string>
+			<key>d</key>
+			<string>Um grafo onde todos os vértices têm o mesmo grau.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo completo bipartido?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo dirigido acíclico (DAG) é um grafo direcionado que não possui ciclos.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo direcionado que não possui ciclos.</string>
+			<key>b</key>
+			<string>Um grafo onde todos os vértices estão conectados por arestas.</string>
+			<key>c</key>
+			<string>Um grafo com no máximo um ciclo.</string>
+			<key>d</key>
+			<string>Um grafo que possui ciclos direcionados.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo dirigido acíclico (DAG)?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo Euleriano é aquele que possui um ciclo que passa por todas as arestas exatamente uma vez.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Possui um ciclo que passa por todas as arestas exatamente uma vez.</string>
+			<key>b</key>
+			<string>Possui um ciclo que passa por todos os vértices.</string>
+			<key>c</key>
+			<string>Possui um ciclo que passa por todos os vértices e arestas.</string>
+			<key>d</key>
+			<string>Não possui ciclos.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a característica de um grafo Euleriano?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo Hamiltoniano é aquele que possui um ciclo que passa por todos os vértices exatamente uma vez.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Possui um ciclo que passa por todos os vértices.</string>
+			<key>b</key>
+			<string>Possui um ciclo que passa por todas as arestas.</string>
+			<key>c</key>
+			<string>Possui uma árvore geradora mínima.</string>
+			<key>d</key>
+			<string>Possui um número de arestas igual ao número de vértices.</string>
+		</dict>
+		<key>question</key>
+		<string>O que caracteriza um grafo Hamiltoniano?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Em um grafo bipartido completo, todos os vértices de um conjunto estão conectados a todos os vértices do outro.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo bipartido onde todos os vértices de um conjunto estão conectados a todos os vértices do outro.</string>
+			<key>b</key>
+			<string>Um grafo em que todos os vértices têm grau 3.</string>
+			<key>c</key>
+			<string>Um grafo com ciclos de comprimento 2.</string>
+			<key>d</key>
+			<string>Um grafo sem arestas.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo bipartido completo?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo Hamiltoniano contém um ciclo que passa por todos os vértices exatamente uma vez.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo que contém um ciclo que passa por todos os vértices.</string>
+			<key>b</key>
+			<string>Um grafo que contém um ciclo que passa por todas as arestas.</string>
+			<key>c</key>
+			<string>Um grafo sem ciclos.</string>
+			<key>d</key>
+			<string>Um grafo onde todos os vértices têm o mesmo grau.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual é a definição de um grafo Hamiltoniano?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Um grafo cíclico é aquele que contém pelo menos um ciclo, ou seja, um caminho fechado.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo que contém pelo menos um ciclo.</string>
+			<key>b</key>
+			<string>Um grafo que não contém ciclos.</string>
+			<key>c</key>
+			<string>Um grafo com mais de dois vértices.</string>
+			<key>d</key>
+			<string>Um grafo com todos os vértices conectados.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo cíclico?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Em um grafo orientado, as arestas possuem uma direção associada, ou seja, elas vão de um vértice a outro.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo em que as arestas têm uma direção associada.</string>
+			<key>b</key>
+			<string>Um grafo onde todas as arestas têm o mesmo peso.</string>
+			<key>c</key>
+			<string>Um grafo onde todos os vértices têm o mesmo grau.</string>
+			<key>d</key>
+			<string>Um grafo com ciclos.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo orientado?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>c</string>
+		<key>explanation</key>
+		<string>Um grafo com componentes conexos é aquele em que existe um caminho entre qualquer par de vértices.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Um grafo onde todos os vértices estão conectados diretamente.</string>
+			<key>b</key>
+			<string>Um grafo onde há pelo menos um vértice que não é conectado a outros.</string>
+			<key>c</key>
+			<string>Um grafo onde todos os vértices podem ser acessados a partir de qualquer outro vértice.</string>
+			<key>d</key>
+			<string>Um grafo que não possui arestas.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é um grafo com componentes conexos?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>Em um grafo completo dirigido, cada vértice é conectado a todos os outros com arestas direcionadas.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Cada vértice é conectado a todos os outros com arestas direcionadas.</string>
+			<key>b</key>
+			<string>Todos os vértices têm grau 1.</string>
+			<key>c</key>
+			<string>Não há arestas no grafo.</string>
+			<key>d</key>
+			<string>Ele possui apenas ciclos.</string>
+		</dict>
+		<key>question</key>
+		<string>O que caracteriza um grafo completo dirigido?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>O algoritmo de Dijkstra é utilizado para encontrar o caminho mais curto entre dois vértices em um grafo ponderado.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Encontrar o caminho mais curto entre dois vértices em um grafo.</string>
+			<key>b</key>
+			<string>Encontrar ciclos em grafos.</string>
+			<key>c</key>
+			<string>Determinar se um grafo é bipartido.</string>
+			<key>d</key>
+			<string>Encontrar a árvore geradora mínima.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é o algoritmo de Dijkstra utilizado para?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>A matriz de adjacência usa uma matriz para representar as conexões entre os vértices, onde as entradas indicam a presença de arestas.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Usa uma matriz para representar a conexão entre vértices.</string>
+			<key>b</key>
+			<string>É sempre direcionado.</string>
+			<key>c</key>
+			<string>Não possui arestas.</string>
+			<key>d</key>
+			<string>Possui apenas vértices com grau 2.</string>
+		</dict>
+		<key>question</key>
+		<string>Qual a característica de um grafo de matriz de adjacência?</string>
+	</dict>
+	<dict>
+		<key>correct_answer</key>
+		<string>a</string>
+		<key>explanation</key>
+		<string>A decomposição de um grafo é o processo de dividir um grafo em subgrafos menores.</string>
+		<key>options</key>
+		<dict>
+			<key>a</key>
+			<string>Dividir o grafo em subgrafos menores.</string>
+			<key>b</key>
+			<string>Remover todos os vértices de grau 2.</string>
+			<key>c</key>
+			<string>Adicionar vértices para conectar componentes desconexos.</string>
+			<key>d</key>
+			<string>Transformar o grafo em uma árvore.</string>
+		</dict>
+		<key>question</key>
+		<string>O que é a decomposição de um grafo?</string>
+	</dict>
+</array>
+</plist>

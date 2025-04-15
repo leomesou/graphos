@@ -55,4 +55,14 @@ extension UIView {
 			self.isHidden = true
 		})
 	}
+
+	public func animateViews(views: [UIView]) {
+		let initialX: CGFloat = self.bounds.width
+		for (index, view) in views.enumerated() {
+			view.transform = CGAffineTransform(translationX: initialX, y: 0)
+			UIView.animate(withDuration: 0.5, delay: 0.1 * Double(index), usingSpringWithDamping: 0.6, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
+				view.transform = .identity
+			}, completion: nil)
+		}
+	}
 }

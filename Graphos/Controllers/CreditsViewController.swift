@@ -48,7 +48,7 @@ class CreditsViewController: UIViewController {
 
 	public override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		animateViews()
+		view.animateViews(views: [developedByView, aboutView])
 	}
 
 	@IBAction func backAction(_ sender: Any) {
@@ -59,9 +59,5 @@ class CreditsViewController: UIViewController {
 		titleLabel.text = Texts.Credits.title
 		developedByLabel.text = Texts.Credits.developedBy
 		aboutLabel.text = Texts.Credits.about
-	}
-
-	private func animateViews() {
-
 	}
 }

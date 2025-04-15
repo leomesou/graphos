@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kzm-vA-8sf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kzm-vA-8sf">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--First View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="Graphos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="LandingViewController" customModule="Graphos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -998,12 +998,12 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="507"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-ry-zpm" userLabel="Question View">
-                                        <rect key="frame" x="0.0" y="12" width="375" height="344.5"/>
+                                        <rect key="frame" x="0.0" y="12" width="375" height="353.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6KY-H2-3Ve">
-                                                <rect key="frame" x="75" y="8" width="225" height="120"/>
+                                                <rect key="frame" x="187.5" y="8" width="0.0" height="0.0"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-xg-n9a">
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-xg-n9a">
                                                         <rect key="frame" x="0.0" y="0.0" width="225" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="gda-3Z-AES"/>
@@ -1012,14 +1012,14 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A soma dos graus de todos os vértices de um grafo sempre é par." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="knX-YW-und">
-                                                <rect key="frame" x="40" y="144" width="327" height="88.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em um grafo bipartido completo, o número de arestas é o produto do número de vértices dos dois conjuntos, m * n." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="knX-YW-und">
+                                                <rect key="frame" x="40" y="24" width="327" height="117.5"/>
                                                 <fontDescription key="fontDescription" name="Rajdhani-SemiBold" family="Rajdhani" pointSize="23"/>
                                                 <color key="textColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-GY-Nvi">
-                                                <rect key="frame" x="40" y="248.5" width="335" height="88"/>
+                                                <rect key="frame" x="40" y="157.5" width="335" height="188"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVl-gS-LdG">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="38"/>
@@ -1029,18 +1029,48 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="20"/>
                                                         <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
-                                                        <state key="normal" title="a) verdadeiro">
+                                                        <state key="normal" title="a) m + n.">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="optionSelected:" destination="95v-A8-isr" eventType="touchUpInside" id="M8i-YE-yKL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWz-z2-FEO">
                                                         <rect key="frame" x="0.0" y="50" width="335" height="38"/>
                                                         <color key="backgroundColor" red="0.01176470588" green="0.75686274509999996" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="20"/>
                                                         <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
-                                                        <state key="normal" title="b) falso">
+                                                        <state key="normal" title="b) m * n.">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="optionSelected:" destination="95v-A8-isr" eventType="touchUpInside" id="7fQ-u2-aWw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBu-4o-A4f">
+                                                        <rect key="frame" x="0.0" y="100" width="335" height="38"/>
+                                                        <color key="backgroundColor" red="0.01176470588" green="0.75686274509999996" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="20"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                        <state key="normal" title="c) (m + n)/2.">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="optionSelected:" destination="95v-A8-isr" eventType="touchUpInside" id="tpt-8w-mF4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuV-NW-MqA">
+                                                        <rect key="frame" x="0.0" y="150" width="335" height="38"/>
+                                                        <color key="backgroundColor" red="0.01176470588" green="0.75686274509999996" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="20"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                        <state key="normal" title="d) m^2 + n^2.">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="optionSelected:" destination="95v-A8-isr" eventType="touchUpInside" id="ZyD-h7-LxU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1127,6 +1157,11 @@
                     <connections>
                         <outlet property="backButton" destination="4pb-do-HdR" id="UTD-Hu-JwW"/>
                         <outlet property="bottomView" destination="X1o-Cm-jqc" id="nlg-2K-OIp"/>
+                        <outlet property="optionButtonA" destination="FVl-gS-LdG" id="uIK-rz-BfS"/>
+                        <outlet property="optionButtonB" destination="XWz-z2-FEO" id="pyY-Fg-T7B"/>
+                        <outlet property="optionButtonC" destination="aBu-4o-A4f" id="l8v-Cu-H8z"/>
+                        <outlet property="optionButtonD" destination="QuV-NW-MqA" id="NU5-mH-E3f"/>
+                        <outlet property="questionLabel" destination="knX-YW-und" id="d7Y-m9-I5d"/>
                         <outlet property="settingsButton" destination="NT6-gl-ZFz" id="jSi-AW-PSW"/>
                         <outlet property="titleLabel" destination="YHo-Kq-yCM" id="E7L-0m-Kpw"/>
                         <outlet property="topView" destination="GZL-iz-HCs" id="EPB-9o-Sgc"/>

@@ -11,6 +11,7 @@
 		9C0B5B562630505C00E2BF15 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B5B552630505B00E2BF15 /* Images.swift */; };
 		9C1A2B9E23EEFB55007137BE /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A2B9D23EEFB55007137BE /* ViewManager.swift */; };
 		9C1A2BA023EF0015007137BE /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A2B9F23EF0015007137BE /* CreditsViewController.swift */; };
+		9C3BADE92DA97425001CCBC2 /* Quiz.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3BADE82DA97425001CCBC2 /* Quiz.plist */; };
 		9CE3582A23B149BC00EFBC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3582923B149BC00EFBC47 /* AppDelegate.swift */; };
 		9CE3583323B149BE00EFBC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3583223B149BE00EFBC47 /* Assets.xcassets */; };
 		9CE3584323B4FD2500EFBC47 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3583E23B4FD2400EFBC47 /* Rajdhani-Medium.ttf */; };
@@ -21,7 +22,7 @@
 		9CE3584A23B5090F00EFBC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584823B5090F00EFBC47 /* LaunchScreen.storyboard */; };
 		9CE3584B23B5090F00EFBC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584923B5090F00EFBC47 /* Main.storyboard */; };
 		9CE7971B23F9676F00C064C6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7971A23F9676F00C064C6 /* HelpViewController.swift */; };
-		9CE8AB1323EED2C500A3A909 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1223EED2C400A3A909 /* FirstViewController.swift */; };
+		9CE8AB1323EED2C500A3A909 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1223EED2C400A3A909 /* LandingViewController.swift */; };
 		9CE8AB1523EED31F00A3A909 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */; };
 		9CE8AB1723EED39500A3A909 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1623EED39500A3A909 /* SettingsViewController.swift */; };
 		9CE8AB1923EED3CA00A3A909 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1823EED3CA00A3A909 /* LevelsViewController.swift */; };
@@ -41,6 +42,7 @@
 		9C0B5B552630505B00E2BF15 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		9C1A2B9D23EEFB55007137BE /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		9C1A2B9F23EF0015007137BE /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		9C3BADE82DA97425001CCBC2 /* Quiz.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Quiz.plist; sourceTree = "<group>"; };
 		9CE3582623B149BC00EFBC47 /* Graphos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3582923B149BC00EFBC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE3583223B149BE00EFBC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 		9CE3584823B5090F00EFBC47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CE3584923B5090F00EFBC47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9CE7971A23F9676F00C064C6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		9CE8AB1223EED2C400A3A909 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9CE8AB1223EED2C400A3A909 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1623EED39500A3A909 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1823EED3CA00A3A909 /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewController.swift; sourceTree = "<group>"; };
@@ -127,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				9C1A2B9F23EF0015007137BE /* CreditsViewController.swift */,
-				9CE8AB1223EED2C400A3A909 /* FirstViewController.swift */,
 				9CE8AB1C23EED40B00A3A909 /* GameViewController.swift */,
 				9CE7971A23F9676F00C064C6 /* HelpViewController.swift */,
+				9CE8AB1223EED2C400A3A909 /* LandingViewController.swift */,
 				9CE8AB1823EED3CA00A3A909 /* LevelsViewController.swift */,
 				9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */,
 				9CE8AB1A23EED3F000A3A909 /* QuizViewController.swift */,
@@ -171,6 +173,7 @@
 		9CF663632666F58400530090 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				9C3BADE82DA97425001CCBC2 /* Quiz.plist */,
 				9CF663642666F5B100530090 /* GameData.plist */,
 				9CF6636A2666F8AF00530090 /* GameDefinitions.plist */,
 				9CF663662666F5C000530090 /* PersistenceManager.swift */,
@@ -206,7 +209,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				ORGANIZATIONNAME = "Leandro Sousa";
 				TargetAttributes = {
 					9CE3582523B149BC00EFBC47 = {
@@ -242,6 +245,7 @@
 				9CE3584523B4FD2500EFBC47 /* Rajdhani-Light.ttf in Resources */,
 				9CF663652666F5B100530090 /* GameData.plist in Resources */,
 				9CE3584B23B5090F00EFBC47 /* Main.storyboard in Resources */,
+				9C3BADE92DA97425001CCBC2 /* Quiz.plist in Resources */,
 				9CE3584323B4FD2500EFBC47 /* Rajdhani-Medium.ttf in Resources */,
 				9CE3584A23B5090F00EFBC47 /* LaunchScreen.storyboard in Resources */,
 				9CF6636B2666F8AF00530090 /* GameDefinitions.plist in Resources */,
@@ -262,7 +266,7 @@
 				9CE8AB2723EED98900A3A909 /* UIView+Extensions.swift in Sources */,
 				9CF663672666F5C000530090 /* PersistenceManager.swift in Sources */,
 				9CE7971B23F9676F00C064C6 /* HelpViewController.swift in Sources */,
-				9CE8AB1323EED2C500A3A909 /* FirstViewController.swift in Sources */,
+				9CE8AB1323EED2C500A3A909 /* LandingViewController.swift in Sources */,
 				9CE8AB1923EED3CA00A3A909 /* LevelsViewController.swift in Sources */,
 				9CE8AB1523EED31F00A3A909 /* PlayViewController.swift in Sources */,
 				9C0B5B562630505C00E2BF15 /* Images.swift in Sources */,
@@ -313,6 +317,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3UD89N84N2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -373,6 +378,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3UD89N84N2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -400,7 +406,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L3J4WEG8AK;
 				INFOPLIST_FILE = Graphos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,7 +426,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L3J4WEG8AK;
 				INFOPLIST_FILE = Graphos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (

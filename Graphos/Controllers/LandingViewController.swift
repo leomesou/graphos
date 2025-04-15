@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  LandingViewController.swift
 //  Graphos
 //
 //  Created by Leandro Sousa on 08/02/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FirstViewController: UIViewController {
+public class LandingViewController: UIViewController {
 
 	@IBOutlet weak var logoImageView: UIImageView!
 	@IBOutlet weak var playView: UIView! {
@@ -63,7 +63,7 @@ public class FirstViewController: UIViewController {
 
 	public override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		animateViews()
+		view.animateViews(views: [playView, gameCenterView, settingsView, creditsView])
 	}
 
 	public override var prefersStatusBarHidden : Bool {
@@ -92,9 +92,5 @@ public class FirstViewController: UIViewController {
 		gameCenterLabel.text = Texts.First.gameCenter
 		settingsLabel.text = Texts.First.settings
 		creditsLabel.text = Texts.First.credits
-	}
-
-	private func animateViews() {
-
 	}
 }

@@ -58,7 +58,7 @@ class HelpViewController: UIViewController {
 
 	public override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		animateViews()
+		view.animateViews(views: [planarGraphView, kRegularGraphView, quizView])
 	}
 
 	@IBAction func backAction(_ sender: Any) {
@@ -70,9 +70,5 @@ class HelpViewController: UIViewController {
 		planarGraphLabel.text = Texts.Help.planarGraph
 		kRegularGraphLabel.text = Texts.Help.kRegularGraph
 		quizLabel.text = Texts.Help.quiz
-	}
-
-	private func animateViews() {
-
 	}
 }

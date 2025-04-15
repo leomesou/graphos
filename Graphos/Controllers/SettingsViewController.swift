@@ -61,13 +61,16 @@ public class SettingsViewController: UIViewController {
 
 	public override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		animateViews()
+		view.animateViews(views: [resetProgressView, activateSoundView, helpView])
 	}
 
 	@objc private func resetProgressAction() {
-		print("Reset Progress")
-		//TODO: Confirm
-		PersistenceManager.instance.resetProgress()
+		let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to reset your progress?", preferredStyle: .alert)
+		alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+		alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { _ in
+			PersistenceManager.instance.resetProgress()
+		}))
+		self.present(alert, animated: true, completion: nil)
 	}
 
 	@objc private func activateSoundAction() {
@@ -87,9 +90,5 @@ public class SettingsViewController: UIViewController {
 		resetProgressLabel.text = Texts.Settings.resetProgress
 		activateSoundLabel.text = Texts.Settings.activateSound
 		helpLabel.text = Texts.Settings.help
-	}
-
-	private func animateViews() {
-
 	}
 }
