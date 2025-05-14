@@ -329,10 +329,10 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="507"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abw-Qh-Dds">
-                                        <rect key="frame" x="20" y="86" width="335" height="335"/>
+                                        <rect key="frame" x="20" y="52.5" width="335" height="402"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="orL-XY-nV8">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="335"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="402"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5DY-eB-ibK">
                                                     <size key="itemSize" width="50" height="50"/>
@@ -341,7 +341,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="levelCell" id="m2Z-h9-hyi">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LevelCell" id="m2Z-h9-hyi">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nfI-Qh-R62">
@@ -352,13 +352,13 @@
                                                 </cells>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.9882352941176471" green="0.40000000000000002" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="orL-XY-nV8" secondAttribute="trailing" id="1AR-Vs-Vek"/>
                                             <constraint firstAttribute="bottom" secondItem="orL-XY-nV8" secondAttribute="bottom" id="4WC-Wa-2SE"/>
                                             <constraint firstItem="orL-XY-nV8" firstAttribute="leading" secondItem="abw-Qh-Dds" secondAttribute="leading" id="w1Q-Td-38D"/>
                                             <constraint firstItem="orL-XY-nV8" firstAttribute="top" secondItem="abw-Qh-Dds" secondAttribute="top" id="xWk-IB-vn6"/>
-                                            <constraint firstAttribute="width" secondItem="abw-Qh-Dds" secondAttribute="height" multiplier="1:1" id="xh9-Bn-sOI"/>
+                                            <constraint firstAttribute="width" secondItem="abw-Qh-Dds" secondAttribute="height" multiplier="5:6" id="xh9-Bn-sOI"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -428,6 +428,7 @@
                     <connections>
                         <outlet property="backButton" destination="j7c-d5-6Ar" id="FYR-Fz-rzg"/>
                         <outlet property="bottomView" destination="idA-Fy-xrE" id="pk5-N0-jq1"/>
+                        <outlet property="collectionView" destination="orL-XY-nV8" id="aIO-CA-zY0"/>
                         <outlet property="settingsButton" destination="VlX-Dj-qXS" id="kb9-Jp-OIu"/>
                         <outlet property="titleLabel" destination="t5x-C2-JhF" id="xLn-t1-zAL"/>
                         <outlet property="topView" destination="0p3-Eq-Bf7" id="Zam-sH-d4I"/>

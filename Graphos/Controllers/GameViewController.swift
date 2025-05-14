@@ -57,6 +57,9 @@ public class GameViewController: UIViewController {
 		}
 	}
 
+	public var gameType: GameType = .planar
+	public var levelNumber: Int = 1
+
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 		loadGame()

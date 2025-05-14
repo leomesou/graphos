@@ -21,6 +21,8 @@
 		9CE3584723B4FD2500EFBC47 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584223B4FD2400EFBC47 /* Rajdhani-Regular.ttf */; };
 		9CE3584A23B5090F00EFBC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584823B5090F00EFBC47 /* LaunchScreen.storyboard */; };
 		9CE3584B23B5090F00EFBC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3584923B5090F00EFBC47 /* Main.storyboard */; };
+		9CE63E912DD39FA10027FE0D /* LevelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE63E902DD39FA10027FE0D /* LevelCell.swift */; };
+		9CE63E932DD515850027FE0D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE63E922DD515850027FE0D /* Level.swift */; };
 		9CE7971B23F9676F00C064C6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7971A23F9676F00C064C6 /* HelpViewController.swift */; };
 		9CE8AB1323EED2C500A3A909 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1223EED2C400A3A909 /* LandingViewController.swift */; };
 		9CE8AB1523EED31F00A3A909 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */; };
@@ -54,6 +56,8 @@
 		9CE3584223B4FD2400EFBC47 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
 		9CE3584823B5090F00EFBC47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CE3584923B5090F00EFBC47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9CE63E902DD39FA10027FE0D /* LevelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCell.swift; sourceTree = "<group>"; };
+		9CE63E922DD515850027FE0D /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		9CE7971A23F9676F00C064C6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1223EED2C400A3A909 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		9CE8AB1423EED31F00A3A909 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				9CF663632666F58400530090 /* Persistence */,
 				9CE8AB1F23EED46C00A3A909 /* Storyboards */,
 				9CE8AB2223EED5C400A3A909 /* Utils */,
+				9CE63E8F2DD39F850027FE0D /* Views */,
 			);
 			path = Graphos;
 			sourceTree = "<group>";
@@ -123,6 +128,14 @@
 				9CE3583F23B4FD2400EFBC47 /* Rajdhani-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9CE63E8F2DD39F850027FE0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CE63E902DD39FA10027FE0D /* LevelCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9CE8AB1E23EED44100A3A909 /* Controllers */ = {
@@ -173,9 +186,10 @@
 		9CF663632666F58400530090 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				9C3BADE82DA97425001CCBC2 /* Quiz.plist */,
 				9CF663642666F5B100530090 /* GameData.plist */,
 				9CF6636A2666F8AF00530090 /* GameDefinitions.plist */,
+				9C3BADE82DA97425001CCBC2 /* Quiz.plist */,
+				9CE63E922DD515850027FE0D /* Level.swift */,
 				9CF663662666F5C000530090 /* PersistenceManager.swift */,
 			);
 			path = Persistence;
@@ -261,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE63E912DD39FA10027FE0D /* LevelCell.swift in Sources */,
 				9CE8AB1D23EED40B00A3A909 /* GameViewController.swift in Sources */,
 				9CE8AB2123EED5BA00A3A909 /* Colors.swift in Sources */,
 				9CE8AB2723EED98900A3A909 /* UIView+Extensions.swift in Sources */,
@@ -277,6 +292,7 @@
 				9CE3582A23B149BC00EFBC47 /* AppDelegate.swift in Sources */,
 				9CE8AB2523EED6EA00A3A909 /* UIColor+Extensions.swift in Sources */,
 				9CE8AB1723EED39500A3A909 /* SettingsViewController.swift in Sources */,
+				9CE63E932DD515850027FE0D /* Level.swift in Sources */,
 				9CF663692666F6DC00530090 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

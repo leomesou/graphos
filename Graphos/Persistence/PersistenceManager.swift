@@ -15,37 +15,50 @@ public class PersistenceManager {
 
 	private let fileManager = FileManager.default
 	private var documentsDirectory: String = ""
-	private var gameDataDict: [String: [Int]]?
+	private var gameDataDict: [String: [Level]]?
 	private var gameDefinitionsDict: [String: [String]]?
 
-	// Preparação do arquivo plist
 	public func preparePlistForUse(_ pListName: PlistName) {
 		let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
 		guard let documentsDirectory = paths.first else { return }
 		self.documentsDirectory = documentsDirectory
 		let path = documentsDirectory + "/\(pListName.rawValue).plist"
 
-		// Copiar o arquivo plist se não existir
-		if !fileManager.fileExists(atPath: path), let bundlePath = Bundle.main.path(forResource: pListName.rawValue, ofType: "plist") {
-			do {
-				try fileManager.copyItem(atPath: bundlePath, toPath: path)
-			} catch {
-				print("Error preparing plist:", error.localizedDescription)
+		// Check if the file exists in the documents directory
+		if !fileManager.fileExists(atPath: path) {
+			if let bundlePath = Bundle.main.path(forResource: pListName.rawValue, ofType: "plist") {
+				do {
+					// Copy the file from the bundle to the documents directory
+					try fileManager.copyItem(atPath: bundlePath, toPath: path)
+					print("File copied to documents directory: \(path)")
+				} catch {
+					print("Error copying plist file:", error.localizedDescription)
+				}
+			} else {
+				print("Error: Plist file not found in bundle.")
 			}
+		} else {
+			print("File already exists at path: \(path)")
 		}
 
-		// Carregar o conteúdo do plist
+		// Load the plist content
 		var plist: [String: Any]?
 		do {
 			let data = try Data(contentsOf: URL(fileURLWithPath: path))
 			plist = try PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String: Any]
+			print("Plist loaded successfully.")
 		} catch {
-			print("Error creating gamesDict:", error.localizedDescription)
+			print("Error loading plist:", error.localizedDescription)
 		}
 
+		// Map plist data to the appropriate dictionary
 		switch pListName {
 		case .gameData:
-			gameDataDict = plist as? [String: [Int]]
+			gameDataDict = plist?.compactMapValues {
+				($0 as? [Int])?.enumerated().map {
+					Level($0.offset, LevelState(rawValue: $0.element) ?? .empty)
+				}
+			}
 		case .gameDefinitions:
 			gameDefinitionsDict = plist as? [String: [String]]
 		}
@@ -53,16 +66,25 @@ public class PersistenceManager {
 
 	// Salvar progresso do jogo
 	public func saveGame(_ gameType: GameType, levelNumber: Int, levelState: LevelState) {
-		guard var gameLevels = getGameLevels(gameType: gameType) else { return }
-		gameLevels[levelNumber] = levelState.rawValue
+		var gameLevels = getGameLevels(gameType: gameType)
+		gameLevels[levelNumber - 1].state = levelState
 		gameDataDict?[gameType.rawValue] = gameLevels
 
 		let path = documentsDirectory + "/\(PlistName.gameData.rawValue).plist"
 
+		// Debugging: Check if the file exists
+		if !fileManager.fileExists(atPath: path) {
+			print("Error: File does not exist at path \(path).")
+			return
+		} else {
+			print("File exists at path: \(path)")
+		}
+
 		// Salvar os dados de volta ao arquivo
 		DispatchQueue.global(qos: .background).async {
 			do {
-				let data = try PropertyListSerialization.data(fromPropertyList: self.gameDataDict ?? [:], format: .xml, options: 0)
+				let gameIntData = [gameType.rawValue: gameLevels.map(\.state.rawValue)]
+				let data = try PropertyListSerialization.data(fromPropertyList: gameIntData, format: .xml, options: 0)
 				try data.write(to: URL(fileURLWithPath: path))
 			} catch {
 				print("Error saving game data:", error.localizedDescription)
@@ -75,32 +97,41 @@ public class PersistenceManager {
 		let path = documentsDirectory + "/\(PlistName.gameData.rawValue).plist"
 
 		DispatchQueue.global(qos: .background).async {
-			if self.fileManager.fileExists(atPath: path) {
-				do {
-					try self.fileManager.removeItem(atPath: path)
-				} catch {
-					print("Couldn't reset plist:", error.localizedDescription)
-				}
-			}
-
-			self.gameDataDict?.removeAll()
-			let emptyArray = Array(repeating: 2, count: numberOfLevels)
-			for gameType in GameType.allCases {
-				self.gameDataDict?[gameType.rawValue] = emptyArray
-				self.saveGame(gameType, levelNumber: 0, levelState: .empty)
-			}
 			do {
-				let data = try PropertyListSerialization.data(fromPropertyList: self.gameDataDict ?? [:], format: .xml, options: 0)
+				// Remove the existing file if it exists
+				if self.fileManager.fileExists(atPath: path) {
+					try self.fileManager.removeItem(atPath: path)
+					print("File removed at path: \(path)")
+				} else {
+					print("File does not exist at path: \(path)")
+				}
+
+				// Recreate the plist file
+				self.preparePlistForUse(.gameData)
+
+				self.gameDataDict?.removeAll()
+
+				var gameIntData: [String: [Int]] = [:]
+				for gameType in GameType.allCases {
+					let levels = (0..<numberOfLevels).map { level in
+						(Level(level, level == 0 ? .empty : .locked), level == 0 ? 0 : 2)
+					}
+					self.gameDataDict?[gameType.rawValue] = levels.map { $0.0 }
+					gameIntData[gameType.rawValue] = levels.map { $0.1 }
+				}
+
+				let data = try PropertyListSerialization.data(fromPropertyList: gameIntData, format: .xml, options: 0)
 				try data.write(to: URL(fileURLWithPath: path))
+				print("Reset progress saved successfully.")
 			} catch {
-				print("Error saving game data:", error.localizedDescription)
+				print("Error saving reset progress:", error.localizedDescription)
 			}
 		}
 	}
 
 	// Obter os níveis do jogo
-	public func getGameLevels(gameType: GameType) -> [Int]? {
-		return gameDataDict?[gameType.rawValue]
+	public func getGameLevels(gameType: GameType) -> [Level] {
+		return gameDataDict?[gameType.rawValue] ?? []
 	}
 
 	// Obter definições do jogo

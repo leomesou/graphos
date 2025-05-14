@@ -11,4 +11,6 @@ import UIKit
 public struct Images {
 
 	public static let graphosLogoColor = UIImage(named: "graphos_logo_color")
+	public static let checkmark = UIImage(named: "icon-checkmark")
+	public static let lock = UIImage(named: "icon-lock")
 }

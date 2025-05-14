@@ -24,4 +24,15 @@ public enum LevelState: Int {
 	case empty = 0
 	case complete = 1
 	case locked = 2
+
+	public init(_ rawValue: Int) {
+		switch rawValue {
+		case 1:
+			self = .complete
+		case 2:
+			self = .locked
+		default:
+			self = .empty
+		}
+	}
 }
